@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:flippyapp/sereen/Home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -55,7 +56,12 @@ class ChoiseLocation extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            ElevatedButton(onPressed: () {}, child: Text("location"))
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                },
+                child: Text("Submit"))
           ],
         ),
       ),
