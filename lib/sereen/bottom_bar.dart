@@ -23,10 +23,6 @@ class BottomBar extends StatelessWidget {
       ),
       appBar: AppBar(),
       body: PageView(
-        // controller: _pageController,
-        // onPageChanged: (index) {
-        //   setState(() => _currentIndex = index);
-        // },
         children: <Widget>[
           Container(
             color: Colors.blueGrey,

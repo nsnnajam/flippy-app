@@ -1,5 +1,6 @@
 import 'package:flippyapp/sereen/Best_seller.dart';
 import 'package:flippyapp/sereen/Home_page.dart';
+import 'package:flippyapp/sereen/botom2.dart';
 import 'package:flippyapp/sereen/bottom_bar.dart';
 import 'package:flippyapp/sereen/login.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const BottomBar(),
+      home: Bottomsheet(),
     );
   }
 }
