@@ -1,9 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
-
 import 'package:flutter/material.dart';
 
-Widget boxcontainer() {
+Widget boxcontainer(String text, icons) {
   return Column(
     children: [
       Container(
@@ -13,16 +12,18 @@ Widget boxcontainer() {
         decoration: BoxDecoration(
             color: Color.fromARGB(248, 247, 244, 244), shape: BoxShape.circle),
         child: Icon(
-          Icons.local_grocery_store_rounded,
+          icons,
           size: 40,
         ),
       ),
-      Text("Grocery")
+      Text(text)
     ],
   );
 }
 
-Widget titleText(String text,) {
+Widget titleText(
+  String text,
+) {
   return Text(
     text,
     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

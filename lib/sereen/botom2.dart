@@ -1,6 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flippyapp/ptofile.dart';
 import 'package:flippyapp/sereen/Best_seller.dart';
 import 'package:flippyapp/sereen/Home_page.dart';
+import 'package:flippyapp/sereen/all_category.dart';
 import 'package:flippyapp/sereen/cart.dart';
 import 'package:flippyapp/sereen/choise_location.dart';
 import 'package:flippyapp/sereen/login.dart';
@@ -16,7 +19,7 @@ class _BottomsheetState extends State<Bottomsheet> {
   final screens = [
     HomePage(),
     LoginSecreen(),
-    BestSeller(),
+    AllCategory(),
     CartProduct(),
     ProfileSecreen()
   ];

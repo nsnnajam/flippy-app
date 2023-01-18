@@ -3,6 +3,7 @@
 import 'package:flippyapp/constants.dart';
 import 'package:flippyapp/section_title.dart';
 import 'package:flippyapp/sereen/Best_seller.dart';
+import 'package:flippyapp/sereen/blog_Secreen.dart';
 import 'package:flippyapp/sereen/product_class.dart';
 import 'package:flippyapp/widget/Product_card.dart';
 import 'package:flippyapp/widget/widget.dart';
@@ -70,8 +71,12 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               title: Text("Blog"),
               leading: Icon(Icons.post_add),
-              trailing:
-                  IconButton(onPressed: () {}, icon: Icon(Icons.arrow_right)),
+              trailing: IconButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => BlogSecreen()));
+                  },
+                  icon: Icon(Icons.arrow_right)),
             ),
             Divider(),
             ListTile(
@@ -134,18 +139,19 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  boxcontainer(),
+                  boxcontainer("apple", Icons.apple),
                   SizedBox(
                     width: 10,
                   ),
-                  boxcontainer(),
+                  boxcontainer("Fruits", Icons.food_bank),
                   SizedBox(
                     width: 10,
                   ),
-                  boxcontainer(),
+                  boxcontainer("Fruits", Icons.food_bank),
                   SizedBox(
                     width: 10,
                   ),
+                  boxcontainer("Fruits", Icons.food_bank),
                 ],
               ),
             ),
