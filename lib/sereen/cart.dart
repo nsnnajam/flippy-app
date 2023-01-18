@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:ui';
-
+import 'package:flippyapp/widget/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -33,23 +32,75 @@ class _CartProductState extends State<CartProduct> {
                 subtitle: Text("frsh apple"),
               ),
             ),
-            Card(
-              margin: EdgeInsets.all(10),
-              child: Container(
-                height: 100,
-                width: 500,
-                child: Column(
-                  children: [
-                    Row(
+            GestureDetector(
+              child: InkWell(
+                child: Card(
+                  child: Container(
+                    height: 110,
+                    width: 350,
+                    child: Row(
                       children: [
                         Image.asset(
                           "assets/Logo.png",
-                          width: 100,
-                          height: 100,
+                          width: 80,
+                          height: 50,
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Column(
+                          children: [
+                            Align(
+                              alignment: Alignment.topRight,
+                              child: titleText(
+                                "orange juice",
+                              ),
+                            ),
+                            Text("Unit Price : 1450"),
+                            Row(
+                              children: [
+                                IconButton(
+                                    onPressed: () {}, icon: Icon(Icons.add)),
+                                Text("02:kg"),
+                                IconButton(
+                                    onPressed: () {}, icon: Icon(Icons.remove)),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Row(
+                              children: [
+                                Align(
+                                  alignment: Alignment.topRight,
+                                  child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.favorite,
+                                        color: Color.fromARGB(255, 79, 6, 182),
+                                      )),
+                                ),
+                                Align(
+                                  alignment: Alignment.topRight,
+                                  child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.delete,
+                                        color: Colors.red,
+                                      )),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text("2400")
+                          ],
                         ),
                       ],
                     ),
-                  ],
+                  ),
                 ),
               ),
             ),
