@@ -52,3 +52,18 @@ Widget titleText(
 //     ),
 //   );
 // }
+// Widget textfield(String label, String hint) {
+//   return Padding(
+//     padding: const EdgeInsets.all(10.0),
+//     child: TextFormField(
+     
+//       // autovalidateMode: AutovalidateMode.always,
+//       decoration: const InputDecoration(
+//         border: OutlineInputBorder(),
+//         // icon: Icon(Icons.person),
+//         hintText: constlabel
+//         labelText: 
+//       ),
+//     ),
+//   );
+// }

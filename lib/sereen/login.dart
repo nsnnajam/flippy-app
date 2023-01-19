@@ -118,7 +118,7 @@ class LoginSecreen extends StatelessWidget {
                             keyboardType: TextInputType.emailAddress,
                             decoration: InputDecoration(
                                 labelText: "enter name",
-                                enabledBorder: OutlineInputBorder(
+                                border: OutlineInputBorder(
                                     borderSide:
                                         BorderSide(color: Colors.grey))),
                           ),

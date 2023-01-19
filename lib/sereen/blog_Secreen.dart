@@ -25,7 +25,7 @@ class BlogSecreen extends StatelessWidget {
                   ),
                   Text("this good blog"),
                   SizedBox(
-                    height: 20,
+                    height: 020,
                   ),
                   Text(
                       'bolg is where we post ths we can use tis it is hk gh dgd ye j hk l ha  ')
